@@ -1,9 +1,15 @@
+# Define variables
+$resourceGroupName = "az-vm-webserver"
+$location = "East US"
+
 # Prompt for Tenant ID and Subscription ID
 $tenantId = Read-Host -Prompt "Enter your Tenant ID"
 $subscriptionId = Read-Host -Prompt "Enter your Subscription ID"
 
-# Installing the Az module
-Install-Module -Name Az -AllowClobber -Scope CurrentUser -Force
+# Check if the Az module is installed, and install if needed
+if (-not (Get-Module -ListAvailable -Name Az)) {
+    Install-Module -Name Az -AllowClobber -Scope CurrentUser -Force
+}
 
 # Importing the Az module
 Import-Module Az.Accounts -Force
@@ -15,4 +21,4 @@ Connect-AzAccount -TenantId $tenantId
 Set-AzContext -SubscriptionId $subscriptionId
 
 # Creating a resource group in Azure East US region
-New-AzResourceGroup -Name "az-vm-webserver" -Location "East US"
+New-AzResourceGroup -Name $resourceGroupName -Location $location
