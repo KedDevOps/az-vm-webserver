@@ -20,7 +20,7 @@ Set up cloud resources on Azure, deploy a Virtual Machine, configure networking,
 
 4. Configure Network Security Groups (NSG)
       - Add inbound rules to allow only necessary traffic.
-      - Open port 22 for SSH (Linux) or port 3389 for RDP (Windows).
+      - Open port 22 for SSH (Linux).
       - Add a rule for port 80 if you intend to host a web server like Nginx.
     
 5. Install and Run a Web Server (Nginx)
