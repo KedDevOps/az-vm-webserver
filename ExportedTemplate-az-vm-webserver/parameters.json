@@ -1,0 +1,30 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "virtualMachines_AZE_VM_name": {
+            "value": null
+        },
+        "virtualNetworks_AZE_Vnet_name": {
+            "value": null
+        },
+        "networkInterfaces_AZE_NIC_name": {
+            "value": null
+        },
+        "networkSecurityGroups_AZE_NSG_name": {
+            "value": null
+        },
+        "publicIPAddresses_AZE_PublicIP_name": {
+            "value": null
+        },
+        "storageAccounts_azureazvmaze112620280_name": {
+            "value": null
+        },
+        "workspaces_AZE_VM_Workspace_name": {
+            "value": null
+        },
+        "solutions_AzureAutomation_AZE_VM_Workspace__name": {
+            "value": null
+        }
+    }
+}
